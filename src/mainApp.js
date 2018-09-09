@@ -8,11 +8,15 @@ mainApp.set('views', __dirname.replace('src', 'views'));
 console.log(__dirname);
 
 mainApp.get('/', (request, response) => {
-    response.send(`<html><body>Portal de Notícias</body></html>`);
+    response.render('home/index');
 });
 
-mainApp.get('/tecnologia', (request, response) => {
-    response.render('secao/tecnologia');
+mainApp.get('/admin/nova-noticia', (request, response) => {
+    response.render('admin/form_add_noticia');
+});
+
+mainApp.get('/noticias', (request, response) => {
+    response.render('noticias/noticias');
 });
 
 mainApp.listen(3000, () => {
