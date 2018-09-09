@@ -1,11 +1,4 @@
-const express = require('express');
-const mainApp = express();
-
-//Setando a Engine de renderização e pasta padrão de views
-mainApp.set('view engine', 'ejs');
-mainApp.set('views', __dirname.replace('src', 'views'));
-
-console.log(__dirname);
+const mainApp = require ('./modules/config/MainServerConfig');
 
 mainApp.get('/', (request, response) => {
     response.render('home/index');
@@ -20,5 +13,5 @@ mainApp.get('/noticias', (request, response) => {
 });
 
 mainApp.listen(3000, () => {
-    console.log('Servidor rodando com Express');
+    console.log('Servidor ON \nRodando na Porta 3000');
 });
