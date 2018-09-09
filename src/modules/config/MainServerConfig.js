@@ -7,6 +7,9 @@ mainApp.set('view engine', 'ejs');
 mainApp.set('views', '../views');
 
 //Utilizando Consign para rotas
-consign().include('modules/routes').into(mainApp);
+consign()
+    .include('modules/routes')
+    .then('modules/config/MainDatabaseConfig.js')
+    .into(mainApp);
 
 module.exports = mainApp;
