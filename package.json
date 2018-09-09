@@ -1,0 +1,22 @@
+{
+  "name": "portal_noticias",
+  "version": "1.0.0",
+  "description": "Projeto criado para reprodução do NodeJS em um portal de noticias",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrickfeitosa/NodeJSKnowledge.git"
+  },
+  "author": "Patrick Vieira Feitosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patrickfeitosa/NodeJSKnowledge/issues"
+  },
+  "homepage": "https://github.com/patrickfeitosa/NodeJSKnowledge#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
