@@ -2,11 +2,26 @@
 	<html lang="pt-br">
 		<head>
 			<meta charset="utf-8"/>
-			<title>Not�cias</title>
+			<title>Not�cias</title>
 		</head>
 	<body>
 
-		<h1>Not�cias</h1>
-
+		<h1>Not�cias</h1>
+		<table>
+			<thead>
+				<td>ID Noticia</td>
+				<td>Título Notícia</td>
+				<td>Conteúdo Notícia</td>
+			</thead>
+			<tbody>
+				<tr>
+					<% noticias.forEach(noticia =>{%>
+						<td> <%= noticia.id_noticia%></td>
+						<td> <%= noticia.titulo%></td>
+						<td> <%= noticia.noticia%></td>
+					<%}); %>
+				</tr>
+			</tbody>
+		</table>
 	</body>
 </html>
