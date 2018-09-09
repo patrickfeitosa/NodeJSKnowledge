@@ -3,6 +3,6 @@ const mainApp = express();
 
 //Setando a Engine de renderização e pasta padrão de views
 mainApp.set('view engine', 'ejs');
-mainApp.set('views', __dirname.replace('src', 'views'));
+mainApp.set('views', '../views');
 
 module.exports = mainApp;
