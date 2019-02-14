@@ -10,6 +10,7 @@ mainApp.set('views', '../views');
 consign()
     .include('modules/routes')
     .then('modules/config/MainDatabaseConfig.js')
+    .then('modules/models')
     .into(mainApp);
 
 module.exports = mainApp;

@@ -11,14 +11,12 @@
 			<thead>
 				<td>ID Noticia</td>
 				<td>Título Notícia</td>
-				<td>Conteúdo Notícia</td>
 			</thead>
 			<tbody>
 				<tr>
-					<% noticias.forEach(noticia =>{%>
+					<% noticias.forEach((noticia) =>{%>
 						<td> <%= noticia.id_noticia%></td>
 						<td> <%= noticia.titulo%></td>
-						<td> <%= noticia.noticia%></td>
 					<%}); %>
 				</tr>
 			</tbody>

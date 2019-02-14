@@ -3,11 +3,10 @@ module.exports = mainApp => {
 
         //Recuperando a rota de conexão com o Banco de Dados
         const connectionDatabase = mainApp.modules.config.MainDatabaseConfig();
-        const noticiasModel = mainApp.src.models.noticiasModel;
+        const noticiasModel = mainApp.modules.model.noticiasModel;
 
-        noticiasModel.getNoticias(connectionDatabase, (error, result) => {
-            response.render('noticias/noticias', { noticias: result });
-        });
-
+        noticiasModel.getNoticia(connectionDatabase, (error, result) => {
+            response.render('noticias/noticia', { noticia: result[0] });
+        })
     });
 }
